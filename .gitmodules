@@ -1,0 +1,3 @@
+[submodule "introduction/03-neoway-ds-template/data-science-template"]
+	path = introduction/03-neoway-ds-template/data-science-template
+	url = https://github.com/NeowayLabs/data-science-template.git
