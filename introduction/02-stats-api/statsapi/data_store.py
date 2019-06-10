@@ -7,7 +7,7 @@ _in_memory_storage = dict()
 
 # Save received data in memory giving an uuid
 def save(data):
-    data_uuid: uuid4()
+    data_uuid = uuid4()
 
     _in_memory_storage[data_uuid] = data
 
