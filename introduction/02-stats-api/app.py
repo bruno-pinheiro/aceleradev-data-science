@@ -1,4 +1,4 @@
-#!/usr/bin/env ṕython
+#!/usr/bin/env python
 
 from flask import Flask, request, jsonify
 from loguru import logger
