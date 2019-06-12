@@ -1,4 +1,6 @@
-from uuid import uuid4
+#!/usr/bin/env python
+
+from uuid import UUID, uuid4
 
 
 # Create a dictionary to keep things in memory
@@ -13,3 +15,6 @@ def save(data):
 
     return data_uuid
 
+
+def get(uuid):
+    return _in_memory_storage[UUID(uuid)]

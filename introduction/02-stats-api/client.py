@@ -1,16 +1,66 @@
 #!/usr/bin/env python
 
+import argparse
+import json
+
 import requests
+from loguru import logger
 
 
+# Method to send data
 def send(data):
-    response = requests.post("http://localhost:5000/data", json={"data": data})
+    response = requests.post("http://localhost:5000/data", json={"data": json.loads(data)})
 
-    print(response.json())
+    return response.json()
+
+
+# Method to retrieve data
+def retrieve(uuid):
+    response = requests.get(f"http://localhost:5000/data/{uuid}")
+
+    return response.json()
+
+
+def request_operation(uuid, operation):
+    response = requests.get(f"http://localhost:5000/data/{uuid}/{operation}")
+
+    return response.json()
 
 
 def main():
-    send([1, 2, 3, 4])
+    parser = argparse.ArgumentParser(description="Test out my api")
+    parser.add_argument("--send", action="store_true")
+    parser.add_argument("--get", action="store_true")
+    parser.add_argument("--calc", action="store_true")
+    parser.add_argument("--data", dest="data", type=str)
+    parser.add_argument("--uuid", dest="uuid", type=str)
+    parser.add_argument("--op", dest="op", type=str)
+
+    args = parser.parse_args()
+
+    if args.send and args.data:
+        logger.info(f"Sending data '{args.data}'")
+
+        response = send(args.data)
+
+        logger.info(f"Response: '{response}'")
+
+    elif args.get and args.uuid:
+        logger.info(f"Retrieving data using UUID '{args.uuid}'")
+
+        response = retrieve(args.uuid)
+
+        logger.info(f"Response: '{response}'")
+
+    elif args.calc and args.uuid and args.op:
+        logger.info(f"Requesting operation '{args.op}' using UUID '{args.uuid}'")
+
+        response = request_operation(args.uuid, args.op)
+
+        logger.info(f"Response: '{response}'")
+
+    else:
+        logger.warning(f"No action")
 
 
 if __name__ == "__main__":
