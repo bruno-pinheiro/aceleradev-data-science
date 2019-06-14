@@ -100,4 +100,7 @@ def get_operation(operation_name):
 
 
 if __name__ == "__main__":
+    with open("/logs/log.txt", "w") as f:
+        f.writelines(["Esse arquivo irá se peder"])
+
     app.run(host="0.0.0.0", debug=True)
