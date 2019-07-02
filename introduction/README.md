@@ -1,6 +1,6 @@
 # [`AceleraDev Data Science - Introduction`]
 
-This module pretends to offer and overview about what will be covered during the Acceleration.
+This module pretends to offer an overview about what will be covered during the Acceleration.
 
 It introduces us on a general data science workflow and presents the tools will be used. Topics are listed below:
 
