@@ -11,3 +11,12 @@ This week starts with an introductory content about data science and go ahead on
 * [Tutorial to deploy Machine Learning models in Production as APIs (using Flask)](https://www.analyticsvidhya.com/blog/2017/09/machine-learning-models-as-apis-using-flask/)
 * [Hidden Technical Debt in Machine Learning Systems](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf)
 
+## Week workshop
+
+https://www.youtube.com/watch?v=X9nSqP4hKhs
+
+## Week challenge
+
+This week the challenge is a Quizz. We haven't any code task to perform.
+
+

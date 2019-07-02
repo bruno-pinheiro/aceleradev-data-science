@@ -11,7 +11,11 @@
 * [15 Stunning Data Visualizations (And What You Can Learn From Them)]()
 * [15 Insane Things That Correlate With Each Other]()
 
-## Week Challenge
+## Workshop da semana
+
+https://www.youtube.com/watch?v=qYDzR_140hQ
+
+## Desafio da semana
 
 __Conhecendo sua base de consumidores: qual estado possui a melhor pontuação de crédito?__
 

@@ -2,7 +2,6 @@
 
 This week starts with an introductory content about data science and go ahead on a flight over Python for machine learning development.
 
-Minimally Sufficient Pandas
 * [Minimally Sufficient Pandas](https://medium.com/dunder-data/minimally-sufficient-pandas-a8e67f2a2428)
 * [Why and How to Use Pandas with Large Data](https://medium.com/dunder-data/minimally-sufficient-pandas-a8e67f2a2428)
 * [Getting started with Data Analysis with Python Pandas](https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77)
@@ -14,7 +13,11 @@ Minimally Sufficient Pandas
 * [Tidy Data](https://r4ds.had.co.nz/tidy-data.html)
 * [Python For Data Science - Cheat Sheet Pandas Basics](https://assets.datacamp.com/blog_assets/PandasPythonForDataScience.pdf)
 
-## Week challenge
+## Workshop da semana
+
+https://www.youtube.com/watch?v=_rQMsn7425U
+
+## Desafio da semana
 
 __Pré-processamento de dados em Python__
 
